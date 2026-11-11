@@ -1,0 +1,123 @@
+/* PawMail support site. Colours are the app's own, from constants/theme.ts. */
+:root {
+  --bg: #f0f7f2;
+  --ink: #22443a;
+  --ink-soft: #5e7a70;
+  --orange: #ff8a3d;
+  --green: #2f9c74;
+  --gold: #ffd166;
+  --gold-tint: #fff7e8;
+  --card: #ffffff;
+  --cream: #fefdf5;
+  --line: #cbe0d4;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+h1, h2, h3, .brand {
+  font-family: 'Baloo 2', system-ui, sans-serif;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 { font-size: 34px; font-weight: 800; }
+h2 { font-size: 24px; font-weight: 700; margin-top: 32px; }
+h3 { font-size: 19px; font-weight: 700; }
+
+p { margin: 8px 0 0; }
+
+a { color: var(--green); font-weight: 700; }
+a:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; border-radius: 4px; }
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--ink);
+}
+.brand img { width: 40px; height: 40px; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 24px;
+}
+nav .links { display: flex; gap: 16px; font-size: 15px; }
+
+.card {
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.hero {
+  background: var(--cream);
+  border: 3px solid var(--ink);
+  border-radius: 28px;
+  padding: 28px 20px;
+  text-align: center;
+}
+.hero img { width: 88px; height: 88px; }
+.hero .tagline { font-size: 19px; color: var(--ink-soft); margin-top: 4px; }
+
+.contact {
+  background: var(--gold-tint);
+  border-color: var(--gold);
+}
+
+.faq h3 + p { color: var(--ink-soft); }
+.faq .card + .card { margin-top: 12px; }
+
+ul { margin: 8px 0 0; padding-left: 22px; }
+li + li { margin-top: 4px; }
+
+.muted { color: var(--ink-soft); font-size: 15px; }
+.small { color: var(--ink-soft); font-size: 14px; margin-top: 6px; }
+
+/* The "Contact support" button: the app's primary orange, with its 3D lip. */
+.button {
+  display: inline-block;
+  background: var(--orange);
+  color: #ffffff;
+  font-family: 'Baloo 2', system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 22px;
+  min-height: 48px;
+  border-radius: 14px;
+  border-bottom: 4px solid #e56f1f;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 2px solid var(--line);
+  font-size: 14px;
+  color: var(--ink-soft);
+}

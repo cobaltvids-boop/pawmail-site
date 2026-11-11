@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PawMail — Privacy</title>
+  <meta name="description" content="PawMail's privacy policy in plain language: what stays on your phone, what leaves it, and how to delete it.">
+  <link rel="icon" href="mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <nav aria-label="Site">
+      <a class="brand" href="index.html"><img src="mark.png" alt="">PawMail</a>
+      <div class="links">
+        <a href="index.html">Support</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+      </div>
+    </nav>
+
+    <h1>Privacy policy</h1>
+    <p class="muted">Effective November 11, 2026</p>
+
+    <section class="card hero" style="text-align:left">
+      <h2 style="margin-top:0">The short version</h2>
+      <ul>
+        <li>No accounts. No ads. No tracking. No analytics.</li>
+        <li>Everything PawMail keeps lives on your phone.</li>
+        <li>One thing leaves it: your pet's portrait, if you add one, so we can write their Report Card.
+          Our server passes it to Anthropic and doesn't keep it.</li>
+        <li>Delete the app, or use Settings → Start over, and it's all gone.</li>
+      </ul>
+    </section>
+
+    <h2>What stays on your phone</h2>
+    <p>
+      Your pet's profile (name, species, breed, age, gender and the personality you picked), their
+      portrait, missions, walks, streaks and badges, your voicemail inbox, and your settings. It's
+      stored only on your device. We can't see it, and there's no copy on any server.
+    </p>
+
+    <h2>What leaves your phone, and why</h2>
+    <div class="card">
+      <h3>Your pet's portrait — only if you add one</h3>
+      <p>
+        When you add a portrait, the photo is sent over an encrypted connection to our server along
+        with your pet's name, species, breed and age, and the last few Report Card headlines (so a new
+        one isn't repeated). Our server forwards it to <strong>Anthropic</strong>, whose Claude model
+        writes the Report Card, and sends the result back to your phone.
+      </p>
+      <ul>
+        <li><strong>Our server</strong> doesn't save the photo or those details, and doesn't write them
+          to its logs. It handles the request and forgets it.</li>
+        <li><strong>Anthropic</strong> receives the photo and details to produce the Report Card and
+          retains them for a limited period under its own policy. See <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>.</li>
+        <li>None of it is linked to you: there's no account, email or device identifier attached.</li>
+        <li>In App Store terms: <strong>Photos</strong> and <strong>Other User Content</strong> (your pet's
+          details), used for app functionality, not linked to you, not used for tracking.</li>
+      </ul>
+      <p class="muted">You can use PawMail without ever adding a portrait.</p>
+    </div>
+
+    <h2>What doesn't leave your phone</h2>
+    <ul>
+      <li><strong>Voicemails.</strong> Every message is recorded in advance and built into the app. Nothing
+        is generated about you, and nothing is sent anywhere to play one.</li>
+      <li><strong>Notifications.</strong> Your pet's daily call is scheduled on your phone as a local
+        notification. There's no push server and no notification token.</li>
+      <li><strong>Siri.</strong> "Start a walk in PawMail" just opens the app and starts the timer.</li>
+      <li><strong>Sharing.</strong> A voicemail or card is only shared when you tap Share, and only to the
+        app or person you choose.</li>
+    </ul>
+
+    <h2>Deleting your data</h2>
+    <p>
+      Go to Settings → Start over to erase your pet and everything about them, or delete PawMail from
+      your phone. Because there are no accounts and our server keeps nothing, there's nothing else to
+      delete. For data Anthropic retains, see its policy linked above.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      PawMail doesn't ask for anyone's personal information, adult or child. A portrait should be of
+      your pet.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      If this policy changes, the new version will be posted here with a new effective date. If what
+      leaves your phone ever changes, the app will tell you before it happens.
+    </p>
+
+    <h2>Contact</h2>
+      <p><a class="button" href="#">Contact support</a></p>
+      <p class="small">or email <a href="mailto:pawmailapp@gmail.com">pawmailapp@gmail.com</a></p>
+
+    <footer>
+      PawMail is a personalized pet companion for entertainment, not veterinary advice. ·
+      <a href="index.html">Support</a>
+    </footer>
+  </main>
+</body>
+</html>
