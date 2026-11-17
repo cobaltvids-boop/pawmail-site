@@ -22,7 +22,7 @@
     </nav>
 
     <h1>Privacy policy</h1>
-    <p class="muted">Effective November 11, 2026</p>
+    <p class="muted">Effective November 17, 2026</p>
 
     <section class="card hero" style="text-align:left">
       <h2 style="margin-top:0">The short version</h2>
@@ -30,7 +30,7 @@
         <li>No accounts. No ads. No tracking. No analytics.</li>
         <li>Everything PawMail keeps lives on your phone.</li>
         <li>One thing leaves it: your pet's portrait, if you add one, so we can write their Report Card.
-          Our server passes it to Anthropic and doesn't keep it.</li>
+          Our server passes it to Anthropic; the server's code doesn't save it.</li>
         <li>Delete the app, or use Settings → Start over, and it's all gone.</li>
       </ul>
     </section>
@@ -38,7 +38,8 @@
     <h2>What stays on your phone</h2>
     <p>
       Your pet's profile (name, species, breed, age, gender and the personality you picked), their
-      portrait, missions, walks, streaks and badges, your voicemail inbox, and your settings. It's
+      portrait, missions, walks, streaks and badges, your voicemail inbox, your settings, and your home
+      location if you turn on "Call when I'm out". It's
       stored only on your device. We can't see it, and there's no copy on any server.
     </p>
 
@@ -52,10 +53,9 @@
         writes the Report Card, and sends the result back to your phone.
       </p>
       <ul>
-        <li><strong>Our server</strong> doesn't save the photo or those details, and doesn't write them
-          to its logs. It handles the request and forgets it.</li>
-        <li><strong>Anthropic</strong> receives the photo and details to produce the Report Card and
-          retains them for a limited period under its own policy. See <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>.</li>
+        <li><strong>Our server's code</strong> doesn't save the photo or those details.</li>
+        <li><strong>Anthropic</strong> receives the photo and details to produce the Report Card. What
+          it keeps is covered by <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>.</li>
         <li>None of it is linked to you: there's no account, email or device identifier attached.</li>
         <li>In App Store terms: <strong>Photos</strong> and <strong>Other User Content</strong> (your pet's
           details), used for app functionality, not linked to you, not used for tracking.</li>
@@ -70,6 +70,10 @@
       <li><strong>Notifications.</strong> Your pet's daily call is scheduled on your phone as a local
         notification. There's no push server and no notification token.</li>
       <li><strong>Siri.</strong> "Start a walk in PawMail" (and Pause, and Stop) just opens the app and works the timer.</li>
+      <li><strong>Location.</strong> Only if you turn on "Call when I'm out" in Settings (iPhone). PawMail
+        reads your location once to set your home, then iPhone tells PawMail when you leave home and come
+        back, so your pet can call while you're out. Your home location and those times stay on your phone
+        and aren't sent anywhere. Turn it off, or use Settings → Start over, and the home location is deleted.</li>
       <li><strong>Steps.</strong> If you allow Motion &amp; Fitness, PawMail reads your phone's step count during a walk you
         start, to show on the walk card. Steps are kept on your phone with the walk and aren't sent anywhere.</li>
       <li><strong>Sharing.</strong> A voicemail or card is only shared when you tap Share, and only to the
@@ -79,7 +83,7 @@
     <h2>Deleting your data</h2>
     <p>
       Go to Settings → Start over to erase your pet and everything about them, or delete PawMail from
-      your phone. Because there are no accounts and our server keeps nothing, there's nothing else to
+      your phone. Because there are no accounts and our server's code saves nothing, there's nothing else to
       delete. For data Anthropic retains, see its policy linked above.
     </p>
 
